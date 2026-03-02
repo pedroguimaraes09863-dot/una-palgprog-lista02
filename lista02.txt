@@ -1,0 +1,52 @@
+1-SENSOR DE ESTACIONAMENTO		
+Fluxograma (descrição passo a passo):
+
+Início
+
+Ler distância
+
+Distância < 0.5m?
+
+ Sim → Tocar bipe contínuo + Exibir "PARE"
+
+ Não → Próxima decisão
+
+Distância >= 0.5m E <= 2m?
+
+ Sim → Tocar bipe intermitente
+
+ Não → Não emitir som
+
+Fim
+
+2-FILTRO DO INSTAGRAM
+Início
+
+Usuário escolhe foto
+
+Perguntar: "Aplicar filtro P&B?"
+
+ Sim → Converter imagem para cinza
+
+ Não → Manter imagem original
+
+Perguntar: "Postar agora?"
+
+ Sim → Enviar para servidor
+
+ Não → Salvar na galeria
+
+Fim
+
+3-CAIXA ELETRÔNICO
+Início
+
+Ler valor_saque
+
+Verificar: valor_saque <= saldo_disponivel?
+
+ Sim → Subtrair valor do saldo → Entregar notas
+
+ Não → Exibir "Saldo Insuficiente"
+
+Fim
